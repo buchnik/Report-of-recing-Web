@@ -1,0 +1,25 @@
+{% extends 'data.html' %}
+
+{% block title %}
+Show drivers name, id
+{% endblock%}
+
+{% block body %}
+<div class="main">
+    <h1>Show report drivers name, id</h1>
+        <table border="1" width="700">
+            {% for driver in drivers %}
+                <tbody align="center">
+                    <tr>
+                        <td class="font"><a href="/report/drivers/?driver_id={{driver.driver_id}}">{{driver.driver_id}}</a></td>
+                        <td class="font">{{driver.name}}</td>
+                    </tr>
+                </tbody>
+            {% endfor %}
+        </table>
+        <form class="button" action="/">
+            <button class="return_button">Return to general page</button>
+        </form>
+</div>
+
+{% endblock %}

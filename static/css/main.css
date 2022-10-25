@@ -1,0 +1,93 @@
+body {
+   background-color: #FFFFFF;
+}
+
+.header{
+    display: flex;
+    margin: auto; /* Расположение flex display по середине экрана*/
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.F1{
+
+}
+
+.text_menu{
+    color: #050101;
+}
+
+.main{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 1100px;
+    height: 890px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+
+}
+
+.about{
+    flex-grow: 4;
+}
+
+.about_description{
+    text-indent: 50px;/* Красная строка*/
+    font-style: normal;
+    font-weight: 550;
+    font-size: 25px;
+    line-height: 24px;
+    color: #050101;
+    width: 1200px;
+
+
+}
+
+.show_report{
+    display: flex;
+    flex-direction: column;
+    padding-right: 260px;
+    padding-left: 260px;
+
+}
+
+.photo{
+    border: 0px solid darkblue;/* Цвет за jpeg */
+    height: 280px;/* высота */
+    width: 450px;/* Ширина */
+    margin: 0 auto;
+}
+
+.card_title{
+    margin: 0 auto;
+    padding: 1% /* отступ по вертикали */
+}
+
+.button{
+    margin: 0 auto;
+    padding: 1%/* отступ по вертикали */
+}
+
+
+.button_report,
+.button_report,
+.desc_button,
+.asc_button,
+.return_button{
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #ee2a26; /* Red цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    border-radius: 10px; /* Скругляем уголки */
+
+}
+
+.font{
+    font-style: normal;
+    font-size: 20px;
+}
+

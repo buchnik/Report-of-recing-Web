@@ -1,0 +1,42 @@
+{% extends 'data.html' %}
+
+{% block title %}
+General page
+{% endblock%}
+
+
+
+{% block body %}
+<div class="main">
+    <div class="main_content">
+        <div class="about">
+            <p class="about_description">
+                F1 drivers got a taste of Suzuka for the first time in three years when practice got under way for the
+                Monaco Grand Prix, but they were unable to unleash their respective cars’ potential because of persistent
+                – and at times heavy – rain. But there were still some takeaways…
+            </p>
+        </div>
+        <!--Show_report-->
+        <div class="show_report">
+            <img src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2022manual/WinterMarch/BahrainGP/2022-power-rankings.jpg.transform/6col/image.jpg"
+                        alt="photo_drivers" class="photo">
+
+            <h3 class="card_title">POWER RANKINGS:from the 2018 Monaco Grand Prix</h3>
+
+            <form class="button" action="/report">
+                <button class="button_report">Show report of racing</button>
+            </form>
+
+            <img src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2022manual/2022Races/JapaneseGP/Post-race/GettyImages-1431222870.jpg.transform/4col/image.jpg"
+                        alt="car_F1" class="photo" width="" height="">
+
+            <h3 class="card_title">Check out this season's official F1 line-up</h3>
+
+            <form class="button" action="/report/drivers">
+                 <button class="button_report">Show information of drivers</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

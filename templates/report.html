@@ -1,0 +1,48 @@
+{% extends 'data.html' %}
+
+{% block title %}
+Shows common statistic
+{% endblock%}
+
+
+
+{% block body %}
+<div class="main">
+    <h1 class="card_title">Shows common statistic</h1>
+        <table border="1" width="700">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>ID</th>
+                    <th>Racer</th>
+                    <th>Team</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            {% for driver in drivers %}
+            <tbody align="center">
+                <tr>
+                    <td>{{driver.num}}</td>
+                    <td>{{driver.driver_id}}</td>
+                    <td>{{driver.name}}</td>
+                    <td>{{driver.team}}</td>
+                    <td>{{driver.lap_time}}</td>
+                </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+
+        <form class="button" action="/report" method="get">
+            <button class="desc_button" name="order" id="desc" value="desc">Show the desc order</button>
+        </form>
+
+        <form class="button" action="/report" method="get">
+            <button class="desc_button" name="order" id="asc" value="asc">Show the asc order</button>
+        </form>
+
+        <form class="button" action="/">
+            <button class="return_button">Return to general page</button>
+        </form>
+</div>
+
+{% endblock %}

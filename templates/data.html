@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Buchatskiy Nikita">
+    <meta name="description" content="Report of Monaco 2018 Racing">
+    <meta name="keywords" content="drivers, driver, racing, Monaco">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<header>
+    <div class="header">
+    <img src="https://seeklogo.com/images/F/formula-1-logo-F7355AA33A-seeklogo.com.png"
+             alt="logo F1" class="F1" width="" height=""> <!-- Логотип сайта -->
+          <nav class="menu"> <!-- Меню -->
+            <h2>
+                <a class="text_menu" href="/">General</a>
+                <a class="text_menu" href="/report">Report</a>
+                <a class="text_menu" href="/report/drivers">Drivers</a>
+            </h2>
+          </nav>
+    </div>
+</header>
+<body>
+    {% block body %}{% endblock %}
+</body>
+</html>
